@@ -229,6 +229,10 @@ hr.small {
     opacity: 0.8;
 }
 
+.publication-list {
+    text-align: left;
+}
+
 /* Call to Action */
 
 .call-to-action {
