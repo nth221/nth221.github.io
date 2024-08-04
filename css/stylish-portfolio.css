@@ -175,11 +175,17 @@ hr.small {
     margin-right: auto;
 }
 
+.people-table th,
 .people-table td {
     border: none;
     padding: 5px;
     text-align: left;
 }
+
+.people-table th {
+    background-color: #f2f2f2; 
+}
+
 
 /* Projects */
 
