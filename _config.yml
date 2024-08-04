@@ -11,15 +11,15 @@ url: "" # the base hostname & protocol for your site
 # User setting
 owner:
 email:
-facebook_username: ""
-twitter_username: ""
-github_username: ""
-address: ""
-  - line: ""
-  - line: ""
+facebook_username:
+twitter_username:
+github_username:
+address:
+  - line:
+  - line:
   # Feel free to add more lines here 
-telephone: ""
-copyright: 
+telephone:
+copyright:
 
 # API settings
 google_api_key:
