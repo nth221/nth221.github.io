@@ -14,12 +14,12 @@ email:
 facebook_username:
 twitter_username:
 github_username:
-address:
-  - line:
-  - line:
+address: "Newton Hall #221, Handong Global University"
+  - line: "Handong-ro 558, Buk-gu, Pohang"
+  - line: "Gyeongbuk 37554"
   # Feel free to add more lines here 
-telephone:
-copyright:
+telephone: "+82-54-260-1309"
+copyright: 
 
 # API settings
 google_api_key:
