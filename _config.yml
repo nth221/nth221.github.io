@@ -11,14 +11,14 @@ url: "" # the base hostname & protocol for your site
 # User setting
 owner:
 email:
-facebook_username:
-twitter_username:
-github_username:
-address: "Newton Hall #221, Handong Global University"
-  - line: "Handong-ro 558, Buk-gu, Pohang"
-  - line: "Gyeongbuk 37554"
+facebook_username: ""
+twitter_username: ""
+github_username: ""
+address: ""
+  - line: ""
+  - line: ""
   # Feel free to add more lines here 
-telephone: "+82-54-260-1309"
+telephone: ""
 copyright: 
 
 # API settings
