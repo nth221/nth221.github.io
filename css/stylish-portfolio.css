@@ -29,6 +29,21 @@ body {
     font-weight: 700;
 }
 
+
+/* Custom */
+.award {
+    vertical-align: super;
+    color: red;
+    font-style: italic;
+    font-size:0.815em;
+}
+.res {
+    font-size:0.785em;
+    vertical-align: middle;
+    color: #337AB7;
+}
+
+
 /* Custom Button Styles */
 
 .btn-dark {
@@ -267,5 +282,5 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 10px 0;
 }
