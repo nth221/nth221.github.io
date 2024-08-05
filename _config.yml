@@ -19,7 +19,7 @@ address:
   - line:
   # Feel free to add more lines here 
 telephone:
-copyright:
+copyright: "Handong Artificial Intelligence Laboratory (HAIL)"
 
 # API settings
 google_api_key:
