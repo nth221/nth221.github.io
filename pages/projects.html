@@ -3,22 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAIL Lab Projects</title>
+    <title>HAIL Projects</title>
     <!-- Including Bootstrap and Stylish Portfolio CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/stylish-portfolio.css">
+    <style>
+        /* Overriding the default header class with a specific height */
+        header.header {
+            height: 300px; /* Set the desired height here */
+        }
+
+        /* Style for the side pane */
+        .side-pane {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        .side-pane ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .side-pane ul li {
+            margin-bottom: 10px;
+        }
+
+        .side-pane ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .side-pane ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Adjusting the main content area to accommodate the side pane */
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="project-header">
-        <div class="col-lg-12 text-center">
+    <header class="header text-center">
+        <div class="container">
             <h1>HAIL Projects</h1>
             <p>At HAIL, we work at the forward edge of artificial intelligence and machine learning, aiming to leverage cutting-edge technologies to improve everyday life.</p>
         </div>
     </header>
 
-    <main class="container">
-        <section class="projects">
+    <!-- Left Side Pane -->
+    <div class="side-pane">
+        <h4>Contents</h4>
+        <ul>
+            <li><a href="#ml-method">ML Method Development</a></li>
+            <li><a href="#medical-ai">Medical & Clinical AI</a></li>
+            <li><a href="#surveillance">Anomalies in Surveillance Video</a></li>
+            <li><a href="#battery-life">Battery Remaining Useful Life</a></li>
+            <li><a href="#kubic">Korean Unification Big Data Center (KUBiC)</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="ml-method" class="projects">
             <h2>ML Method Development</h2>
             <p>HAIL is a research group focused on machine learning-driven AI. We generalize real-world problems and propose solutions grounded in modern mathematical and statistical approaches.</p>
             <ul>
@@ -28,9 +84,9 @@
             </ul>
         </section>
 
-        <hr> <!-- Horizontal line added -->
+        <hr>
 
-        <section class="projects">
+        <section id="medical-ai" class="projects">
             <h2>Medical & Clinical AI</h2>
             <p>HAIL is dedicated to applying AI technologies in healthcare to enhance the quality of medical services and increase access to care for more people. Currently, we are involved in the following projects:</p>
             <ul>
@@ -40,9 +96,9 @@
             </ul>
         </section>
 
-        <hr> <!-- Horizontal line added -->
+        <hr>
 
-        <section class="projects">
+        <section id="surveillance" class="projects">
             <h2>Anomalies in Surveillance Video</h2>
             <p>We aim to develop automated methods to detect critical segments in surveillance videos using advanced video processing techniques.</p>
             <ul>
@@ -53,9 +109,9 @@
             </ul>
         </section>
 
-        <hr> <!-- Horizontal line added -->
+        <hr>
 
-        <section class="projects">
+        <section id="battery-life" class="projects">
             <h2>Battery Remaining Useful Life</h2>
             <p>Through analysis of data from EV Battery Management Systems (BMS), we are building technology to help users predictively manage their vehicles.</p>
             <ul>
@@ -64,9 +120,9 @@
             </ul>
         </section>
 
-        <hr> <!-- Horizontal line added -->
+        <hr>
 
-        <section class="projects">
+        <section id="kubic" class="projects">
             <h2>Korean Unification Big Data Center (KUBiC)</h2>
             <p>At HAIL, we are actively developing IT-based methodologies and case studies to accelerate reconciliation between North and South Korea.</p>
             <ul>
@@ -75,7 +131,7 @@
                 <li>Bias analysis of LLMs on North Korean and unification issues</li>
             </ul>
         </section>
-    </main>
+    </div>
 
     <footer class="footer text-center">
         <div class="container">
