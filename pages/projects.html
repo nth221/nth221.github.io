@@ -10,12 +10,12 @@
     <style>
         /* Overriding the default header class with a specific height */
         header.header {
-            height: 120px;
+            height: 120px;  /* Changed height to 120px */
             width: 100%;
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 50px 0;
+            padding: 20px 0;
         }
 
         /* Container that holds both the side pane and the main content */
@@ -31,6 +31,13 @@
             padding: 20px;
             height: auto;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        .side-pane img {
+            display: block;
+            margin: 0 auto 20px auto;  /* Center the logo and add space below it */
+            width: 150px;  /* Set logo width to 150px */
+            height: auto;
         }
 
         .side-pane ul {
@@ -77,8 +84,9 @@
 
     <!-- Below the header: a container with the side pane and main content -->
     <div class="content-container">
-        <!-- Left Side Pane -->
+        <!-- Left Side Pane with lab logo above the contents -->
         <div class="side-pane">
+            <img src="../img/hail-logo-f.png" alt="HAIL Lab Logo">
             <h4>Contents</h4>
             <ul>
                 <li><a href="#ml-method">ML Method Development</a></li>
