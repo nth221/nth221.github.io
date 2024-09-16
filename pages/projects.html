@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAIL Projects</title>
-    <!-- Including Bootstrap and Stylish Portfolio CSS -->
+    <!-- Including Bootstrap and Stylish Portfolio CSS from ../css/ directory -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/stylish-portfolio.css">
     <style>
         /* Overriding the default header class with a specific height */
         header.header {
-            height: 300px; /* Set the desired height here */
+            height: 120px;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        /* Container that holds both the side pane and the main content */
+        .content-container {
+            display: flex;
+            padding: 20px;
         }
 
         /* Style for the side pane */
         .side-pane {
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 200px;
-            height: 100%;
             background-color: #f8f9fa;
             padding: 20px;
-            overflow-y: auto;
+            height: auto;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         }
 
@@ -44,93 +51,104 @@
             text-decoration: underline;
         }
 
-        /* Adjusting the main content area to accommodate the side pane */
+        /* Main content area */
         .main-content {
-            margin-left: 220px;
+            margin-left: 20px;
+            flex-grow: 1;
             padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        hr {
+            margin: 40px 0;
         }
     </style>
 </head>
 <body>
 
-    <header class="header text-center">
+    <!-- Full width header on top -->
+    <header class="header">
         <div class="container">
             <h1>HAIL Projects</h1>
             <p>At HAIL, we work at the forward edge of artificial intelligence and machine learning, aiming to leverage cutting-edge technologies to improve everyday life.</p>
         </div>
     </header>
 
-    <!-- Left Side Pane -->
-    <div class="side-pane">
-        <h4>Contents</h4>
-        <ul>
-            <li><a href="#ml-method">ML Method Development</a></li>
-            <li><a href="#medical-ai">Medical & Clinical AI</a></li>
-            <li><a href="#surveillance">Anomalies in Surveillance Video</a></li>
-            <li><a href="#battery-life">Battery Remaining Useful Life</a></li>
-            <li><a href="#kubic">Korean Unification Big Data Center (KUBiC)</a></li>
-        </ul>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <section id="ml-method" class="projects">
-            <h2>ML Method Development</h2>
-            <p>HAIL is a research group focused on machine learning-driven AI. We generalize real-world problems and propose solutions grounded in modern mathematical and statistical approaches.</p>
+    <!-- Below the header: a container with the side pane and main content -->
+    <div class="content-container">
+        <!-- Left Side Pane -->
+        <div class="side-pane">
+            <h4>Contents</h4>
             <ul>
-                <li>Prediction with graph data</li>
-                <li>Outlier detection using Transformer</li>
-                <li>Learning with multiple modalities</li>
+                <li><a href="#ml-method">ML Method Development</a></li>
+                <li><a href="#medical-ai">Medical & Clinical AI</a></li>
+                <li><a href="#surveillance">Anomalies in Surveillance Video</a></li>
+                <li><a href="#battery-life">Battery Remaining Useful Life</a></li>
+                <li><a href="#kubic">Korean Unification Big Data Center (KUBiC)</a></li>
             </ul>
-        </section>
+        </div>
 
-        <hr>
+        <!-- Main Content -->
+        <div class="main-content">
+            <section id="ml-method" class="projects">
+                <h2>ML Method Development</h2>
+                <p>HAIL is a research group focused on machine learning-driven AI. We generalize real-world problems and propose solutions grounded in modern mathematical and statistical approaches.</p>
+                <ul>
+                    <li>Prediction with graph data</li>
+                    <li>Outlier detection using Transformer</li>
+                    <li>Learning with multiple modalities</li>
+                </ul>
+            </section>
 
-        <section id="medical-ai" class="projects">
-            <h2>Medical & Clinical AI</h2>
-            <p>HAIL is dedicated to applying AI technologies in healthcare to enhance the quality of medical services and increase access to care for more people. Currently, we are involved in the following projects:</p>
-            <ul>
-                <li>Development of liver disease support software (with Dr. Answer 2.0 Liver Disease Team, Ajou University Hospital)</li>
-                <li>AI algorithm for fecal image recognition for health monitoring (with HEM Pharma)</li>
-                <li>Risk model and analysis for pancreatic cancer (with Herings)</li>
-            </ul>
-        </section>
+            <hr>
 
-        <hr>
+            <section id="medical-ai" class="projects">
+                <h2>Medical & Clinical AI</h2>
+                <p>HAIL is dedicated to applying AI technologies in healthcare to enhance the quality of medical services and increase access to care for more people. Currently, we are involved in the following projects:</p>
+                <ul>
+                    <li>Development of liver disease support software (with Dr. Answer 2.0 Liver Disease Team, Ajou University Hospital)</li>
+                    <li>AI algorithm for fecal image recognition for health monitoring (with HEM Pharma)</li>
+                    <li>Risk model and analysis for pancreatic cancer (with Herings)</li>
+                </ul>
+            </section>
 
-        <section id="surveillance" class="projects">
-            <h2>Anomalies in Surveillance Video</h2>
-            <p>We aim to develop automated methods to detect critical segments in surveillance videos using advanced video processing techniques.</p>
-            <ul>
-                <li>Video anomaly detection with variational autoencoder (with GMDSOFT)</li>
-                <li>Video Anomaly Transformer (VATMAN, with GMDSOFT)</li>
-                <li>Video Indexing for Rapid Surveillance Footage Summarization (VIDEX, with GMDSOFT)</li>
-                <li>Driving habit analysis using dashcam videos (with AI-CAR)</li>
-            </ul>
-        </section>
+            <hr>
 
-        <hr>
+            <section id="surveillance" class="projects">
+                <h2>Anomalies in Surveillance Video</h2>
+                <p>We aim to develop automated methods to detect critical segments in surveillance videos using advanced video processing techniques.</p>
+                <ul>
+                    <li>Video anomaly detection with variational autoencoder (with GMDSOFT)</li>
+                    <li>Video Anomaly Transformer (VATMAN, with GMDSOFT)</li>
+                    <li>Video Indexing for Rapid Surveillance Footage Summarization (VIDEX, with GMDSOFT)</li>
+                    <li>Driving habit analysis using dashcam videos (with AI-CAR)</li>
+                </ul>
+            </section>
 
-        <section id="battery-life" class="projects">
-            <h2>Battery Remaining Useful Life</h2>
-            <p>Through analysis of data from EV Battery Management Systems (BMS), we are building technology to help users predictively manage their vehicles.</p>
-            <ul>
-                <li>Range prediction</li>
-                <li>Future remaining useful life prediction</li>
-            </ul>
-        </section>
+            <hr>
 
-        <hr>
+            <section id="battery-life" class="projects">
+                <h2>Battery Remaining Useful Life</h2>
+                <p>Through analysis of data from EV Battery Management Systems (BMS), we are building technology to help users predictively manage their vehicles.</p>
+                <ul>
+                    <li>Range prediction</li>
+                    <li>Future remaining useful life prediction</li>
+                </ul>
+            </section>
 
-        <section id="kubic" class="projects">
-            <h2>Korean Unification Big Data Center (KUBiC)</h2>
-            <p>At HAIL, we are actively developing IT-based methodologies and case studies to accelerate reconciliation between North and South Korea.</p>
-            <ul>
-                <li>Development of the KUBiC search engine</li>
-                <li>Development of a South-North Korean parallel corpus and translation model</li>
-                <li>Bias analysis of LLMs on North Korean and unification issues</li>
-            </ul>
-        </section>
+            <hr>
+
+            <section id="kubic" class="projects">
+                <h2>Korean Unification Big Data Center (KUBiC)</h2>
+                <p>At HAIL, we are actively developing IT-based methodologies and case studies to accelerate reconciliation between North and South Korea.</p>
+                <ul>
+                    <li>Development of the KUBiC search engine</li>
+                    <li>Development of a South-North Korean parallel corpus and translation model</li>
+                    <li>Bias analysis of LLMs on North Korean and unification issues</li>
+                </ul>
+            </section>
+        </div>
     </div>
 
     <footer class="footer text-center">
@@ -141,7 +159,7 @@
 
     <!-- JS and Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="../css/bootstrap.min.js"></script>
 
 </body>
 </html>
