@@ -24,7 +24,8 @@
 
         /* Container that holds both the side pane and the main content */
         .content-container {
-            display: flex;
+/*             display: flex; */
+            display: block;
             padding: 20px;
         }
 
@@ -64,11 +65,15 @@
 
         /* Main content area */
         .main-content {
+		    width: 100%;
+		    padding: 20px;
+		    background-color: white;
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		    margin: 0 auto;
+/* 
             margin-left: 20px;
             flex-grow: 1;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ */
         }
 
         .project-images {
@@ -146,6 +151,7 @@
     <!-- Below the header: a container with the side pane and main content -->
     <div class="content-container">
         <!-- Left Side Pane with lab logo above the contents -->
+<!-- 
         <div class="side-pane">
             <img src="../img/hail-logo-f.png" alt="HAIL Logo">
             <h4>Contents</h4>
@@ -157,6 +163,7 @@
                 <li><a href="#kubic">Korean Unification Big Data Center (KUBiC)</a></li>
             </ul>
         </div>
+ -->
 
         <!-- Main Content -->
         <div class="main-content">
